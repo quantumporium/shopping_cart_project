@@ -1,5 +1,6 @@
 # shopping_cart.py
 from datetime import datetime
+from os import system, name
 
 products = [
     {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", "price": 3.50},
@@ -37,7 +38,7 @@ def checkout(user_products):
     tax_total = (subtotal * tax)/100
     total = subtotal + tax_total
 
-    return subtotal, tax_total, total
+    return round(subtotal, 2), round(tax_total, 2), round(total, 2)
 
 def print_name_price(user_products):
     for product in user_products:
@@ -45,8 +46,18 @@ def print_name_price(user_products):
             if product == item["id"]:
                 print(f"...{item['name']} (${item['price']})")
 
+def clear_input():
+  
+    # for windows
+    if name == 'nt':
+        _ = system('cls')
+  
+    # for mac and linux(here, os.name is 'posix')
+    else:
+        _ = system('clear')
 
 def receip(user_products, subtotal, tax, total):
+    clear_input()
     print("-"*50)
     print("GREEN FOODS GROCERY\nWWW.GREEN-FOODS-GROCERY.COM")
 
