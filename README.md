@@ -1,4 +1,4 @@
-![](static\Shopping_Cart_🛒(1).png)
+![](https://github.com/quantumporium/shopping_cart_project/blob/main/static/Shopping_Cart_%F0%9F%9B%92(1).png)
 ```
 Shopping cart simulate the function of a fictive shopping cart
 ```
