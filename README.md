@@ -1,4 +1,4 @@
-![banner img](static\Shopping_Cart_🛒(1).png)
+![](static\Shopping_Cart_🛒(1).png)
 ```
 Shopping cart simulate the function of a fictive shopping cart
 ```
